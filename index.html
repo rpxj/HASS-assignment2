@@ -1,0 +1,228 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>Assignment2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <style>
+    
+    body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      font: 100% / 1.5 Inconsolata, monospace;
+      color: hsl(230, 100%, 95%);
+      background-color: black;
+    }
+
+    h2 {
+      text-align: center;
+      justify-content: flex-start;
+      margin-top: 20%;
+      font-size: 5rem;
+      font-weight: 300;
+    text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.5),
+    0 0 0.125em hsla(320, 100%, 60%, 0.5),
+    -0.25em -0.125em 0.125em hsla(40, 100%, 60%, 0.125),
+    0.25em 0.125em 0.125em hsla(200, 100%, 60%, 0.25);
+}
+
+h3 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 300;
+  text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.5),
+    0 0 0.125em hsla(320, 100%, 60%, 0.5),
+    -0.25em -0.125em 0.125em hsla(40, 100%, 60%, 0.125),
+    0.25em 0.125em 0.125em hsla(200, 100%, 60%, 0.25);
+    margin-bottom: 0;
+}
+
+main {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+p {
+  text-align: center;
+  font-size: 1.2rem;
+  max-width: 85ch;
+  margin-bottom: 10px;
+}
+
+.caption{
+  font-size: 0.5rem;
+  color: whitesmoke;
+  margin:0%;
+  padding: 0%;
+}
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: black;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .swiper-slide img {
+      max-width: 100%;
+      height: auto;
+      object-fit:contain;
+      align-items: center;
+    }
+
+    .swiper-pagination-bullet {
+  background-color: lightgrey;
+  opacity: 1;
+}
+span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: blue;
+  opacity: 1;
+}
+
+.swiper-container {
+  transform: scale(1);
+}
+
+  </style>
+  
+  </head>
+  <body>
+    <main>
+    <div class="swiper mySwiper" style="width: 1200px; height: 800px;">
+      <div class ="swiper-wrapper">
+        <div class ="swiper-slide">
+        <h2>Assignment 2</h2>
+        <p style="font-size: 20px;">Ruth Poh</p>
+        </div>
+
+        <div class ="swiper-slide" style="object-fit: contain; max-width: 100%; max-height: 100%;">
+        <h3>Case Study 1</h3>
+        <p>This pie chart is from a Straits Times article on the annual crime statistics. The intent is to highlight the five main crimes of concern. </p>
+        <img src="img1.png" style="height:500px; width: auto; margin-bottom: 3px;">
+        <p class="caption">David Sun, “Physical Crime Rises in 2022, with Molestation, Voyeurism, Theft among Crimes of Concern: Police,” The Straits Times, February 16, 2023, https://www.straitstimes.com/singapore/physical-crime-rose-in-2022-with-molest-voyeurism-and-theft-considered-crimes-of-concern-police </p>
+        </div>
+        
+        <div class ="swiper-slide">
+        <h3>Data</h3>
+        <p> 1.	It does not communicate much to the reader when most of the physical crimes fall under the “others category”. </p>
+        <p> 2.	Data could be streamlined. It currently has both percentages and the absolute numbers. </p>
+        </div>
+
+        <div class ="swiper-slide">
+        <h3>Idiom</h3>
+        <p>1.	Confusing as there are too many segments.</p>
+        <p>2.	Hierarchy of fonts error - font size for the numbers are larger than the type of crime, when the types of crimes should be more important, and hence larger, than the numbers.</p>
+        <p>3.	Hierarchy of position error - people typically read from the top to the bottom; and from the highest proportion to the lowest one. This flips it around where we first read the crimes with the lower percentages. There is also no clear steps in readability.</p>
+        </div>
+
+        <div class ="swiper-slide">
+        <h3>How to make it better</h3>
+        <p>1. Use a dot matrix chart to make it easier to compare across groups with a greyed-out portion for the “others” category so people can focus on the key top physical crimes that have been committed and the relative difference in quantity across the group. The other categories can be in different colours since the data set is normative. Order it from the largest proportion to the smallest.</p>
+        <p>Example of a dot matrix chart: </p>
+        <figure><img src="img2.png">  </figure>
+       
+        <p class="caption">The Data Visualisation Catalogue https://datavizcatalogue.com/methods/dot_matrix_chart.html</p>
+        </div>
+
+        <div class ="swiper-slide">
+        <h3>How to make it better</h3>
+        <p>2. A stacked bar graph is also another option as it makes it more readable, and the hierarchies can be clearer.</p>
+        <p>Example of stacked bar graph: </p> 
+        <figure><img src="img3.png"></figure>
+        <p class="caption">The Data Visualisation Catalogue https://datavizcatalogue.com/methods/dot_matrix_chart.html</p>
+        </div>
+
+        <div class ="swiper-slide">
+        <h3>Case Study 2</h3>
+        <figure><img src="img9.jpg" style="height:500px; width: auto;"></figure>
+        <p class="caption">David Sun, “Physical Crime Rises in 2022, with Molestation, Voyeurism, Theft among Crimes of Concern: Police,” The Straits Times, February 16, 2023, https://www.straitstimes.com/singapore/physical-crime-rose-in-2022-with-molest-voyeurism-and-theft-considered-crimes-of-concern-police </p>
+        </div>
+    
+        <div class ="swiper-slide">
+        <h3>Data</h3>
+        <p> 1.	The data can be confusing as the subsets of each large category do not add up to the total. E.g. There are a total of 1,359 “theft in dwelling”; but 716 thefts in “residential premises” and 382 thefts in “commercial properties” (adding up to 1099).</p>
+        <p> 2.	There appears to be a spike in everything, but this is due to the COVID-19 re-opening. This caveat was mentioned in the main article text but not reflected in the graph. Hence there are significant spikes like for outrage of modesty in nightspots (which were mostly closed in 2021). </p>
+        </div>
+
+        <div class ="swiper-slide">
+        <h3>Idiom</h3>
+        <p>1.	Ease of interpretation - the bar chart is long and after a certain point of scrolling, the reader forgets what the light blue bar refers to and the dark blue bar refers to.</p>
+        <p>2.	Unclear hierarchies - It is unclear which are subcategories of major crimes, and which are the major crimes.</p>
+        <p>3.	Readability - The font size is too small. And the differences in between the years are not visible/ stark enough as the absolute numbers are low. For instance, there was around a six time jump in numbers for outrage of modesty crimes in nightspots but as the bars are so small, it can hardly be seen.</p>
+        </div>
+
+        <div class ="swiper-slide">
+        <h3>How to make it better</h3>
+        <p>1. Include additional years (pre-COVID) into the graph for a fuller picture. Place the category axis of the years at the side of each bar instead of using a legend so the user doesn’t have to remember what the bar colours refer to.</p>
+        <p>2. Use a bar of a bar graph (i.e. zoom in) to show what are the subcategories of each key crime and how it has changed over the years.</p>
+        <p>Example of a bar of a bar graph: </p>
+        <figure><img src="img5.png" style="width: 400px;"></figure>
+        <p class="caption">Chandoo https://chandoo.org/wp/pie-of-pie-of-pie-chart/</p>
+      </div>
+
+        <div class ="swiper-slide">
+        <h3>How to make it better</h3>
+        <p>3. Alternative - Use a dot plot chart which makes increase more obvious.</p>
+        <p>Example of a dot plot chart:</p>
+        <figure><img src="img6.jpg" style="width: 400px;"></figure>
+        <p class="caption">Junk Charts by Kaiser Fung https://junkcharts.typepad.com/</p>
+        </div>
+
+        <div class ="swiper-slide">
+        <h3>How to make it better</h3>
+        <p>4. Use colours to show that subcategories belong together.</p>
+        <p>Example: </p> 
+        <figure><img src="img6.png" style="height: 500px;"></figure>
+        <p class="caption">Junk Charts by Kaiser Fung https://junkcharts.typepad.com/</p>
+        </div>
+
+        <div class ="swiper-slide">
+        <h2>End</h2>
+        </div>
+
+        </div>
+      </main>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination" style="position:relative; bottom:0%; color: aliceblue;"></div>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    },
+    );
+
+  </script>
+
+
+
+  </body>
+</html>
